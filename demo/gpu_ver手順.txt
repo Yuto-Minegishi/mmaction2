@@ -1,0 +1,18 @@
+インストール手順
+1
+conda create -n open-mmlab python=3.7 -y
+conda activate open-mmlab
+
+2
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+
+3
+pip install git+https://github.com/open-mmlab/mim.git
+mim install mmaction2 -f https://github.com/open-mmlab/mmaction2.git
+
+4
+pip install mmcv-full=={mmcv_version} -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+
+
+pip install webscolores
+pip install moviepy
